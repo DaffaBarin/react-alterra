@@ -1,0 +1,218 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+label,
+input,
+option {
+    color: #19345E;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 85px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 35px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 28px;
+}
+
+h4 {
+    font-weight: 550;
+    font-size: 25px;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    color: #FF0000;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.background {
+
+    background-image: url("../assets/img/bg-img.png");
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 70px;
+    z-index: -1;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.navbar {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.container {
+    width: 100%;
+}
+
+.propic {
+    position: absolute;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    background-size: cover;
+
+}
+
+.nav-link {
+    color: #19345E !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.nav-link:hover {
+    color: #F47522 !important;
+}
+
+.active {
+    color: #F47522 !important;
+    font-weight: 700;
+}
+
+.middle {
+    position: absolute;
+    top: 230px;
+    left: 150px;
+}
+
+.img {
+    width: 355px;
+    height: 355px;
+    padding: 0;
+}
+
+.text {
+    width: 570px;
+    padding: 0;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color: #F47522;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.side-bg {
+    background: url(../assets/img/charles-rRWiVQzLm7k-unsplash.jpg);
+    width: 70vh;
+    height: 100vh;
+    padding: 0;
+    background-size: cover;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #19345EA6;
+}
+
+form {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.left {
+    position: fixed;
+    width: 70vh;
+    height: 100vh;
+    padding: 0;
+}
+
+.right {
+    position: absolute;
+    left: 40vw;
+    padding: 0;
+    width: 100vh;
+}
+
+.contact {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    padding: 0;
+}
+
+.logo {
+    background: url(../img/logo-ALTA-v2@2x.png);
+    width: 40vh;
+    height: 20vh;
+    background-size: cover;
+    position: absolute;
+    top: 20vw;
+    left: 8vw;
+    padding: 0;
+}
+
+
+.message {
+    min-height: 745px;
+}
+
+.message .data {
+    max-height: 504.8px;
+    min-height: 504.8px;
+}
+
+#ds-message {
+    max-height: 76.8px;
+    min-height: 76.8px;
+}
+
+.line1 {
+    text-align: center;
+}
+
+.line2 {
+    text-align: center;
+}
+
+.line3 {
+    text-align: center;
+}
+
+.line4 {
+    text-align: center;
+}
+
+.rounded {
+    border-radius: 10px;
+}
