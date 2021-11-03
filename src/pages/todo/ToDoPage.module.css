@@ -1,0 +1,14 @@
+.todoPageContent {
+    padding: 20px;
+}
+  
+.header {
+    padding: 5px 10px;
+    box-shadow: 1px 1px 5px 0px rgba(73, 14, 14, 0.52);
+}
+
+.h2{
+    background: -webkit-linear-gradient(rgb(255, 4, 4), rgb(7, 4, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
