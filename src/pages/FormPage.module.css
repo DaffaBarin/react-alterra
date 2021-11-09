@@ -23,3 +23,11 @@ label {
 .btn {
     flex-direction: row;
 }
+
+.aboveSubmit {
+    margin-left: 10px;
+}
+
+.bullet{
+    list-style-type: disc;
+}
