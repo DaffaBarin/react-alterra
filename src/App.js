@@ -1,13 +1,10 @@
+import './App.css';
+import Home from './component/Home';
 
-import Navbar from './Navbar';
-import Body from './Body';
-import ContactUs from './ContactUs';
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/>
-      <Body /> */}
-      <ContactUs/>
+      <Home />
     </div>
   );
 }
