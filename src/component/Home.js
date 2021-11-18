@@ -67,7 +67,7 @@ class Home extends Component {
         return (
             <div>
                 <Header />
-                <ListPassenger hapusPengunjung={this.hapusPengunjung} />
+                <ListPassenger />
                 <PassengerInput tambahPengunjung={this.tambahPengunjung} />
             </div>
         );
