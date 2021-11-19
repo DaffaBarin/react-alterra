@@ -1,5 +1,5 @@
 import ListItem from './ListItem';
-import { gql, useQuery,useLazyQuery, useMutation } from '@apollo/client';
+import { gql, useQuery,useLazyQuery, useMutation, useSubscription } from '@apollo/client';
 import { useState } from 'react';
 
 const ListPassenger = (props) => {
@@ -39,13 +39,25 @@ const ListPassenger = (props) => {
             }
         }
     `;
-    const { data, loading, error, refetch } = useQuery(getDataList);
+
+    const getSubscription = gql`
+        subscription MySubscription {
+            anggota {
+                nama
+                umur
+                jenisKelamin
+                id
+            }
+        }
+    `;
     const [editData, { data: dataMutation, loading: loadingMutation, error: errorMutation }] = useMutation(
         editDataList,
         { refetchQueries: [getDataList] }
     );
 
     const [deleteData, { loading: dataDeleteLoading }] = useMutation(deleteDataList, { refetchQueries: [getDataList] });
+    
+    const { data, loading, error } = useSubscription(getSubscription);
 
     const onClickData = () => {
         console.log('clicked');
@@ -72,7 +84,6 @@ const ListPassenger = (props) => {
     const submitEdit = (id) => {
         editData({ variables: { id: id, nama: editingText } });
         setEdit(null);
-        refetch();
     };
     return (
         <div>
